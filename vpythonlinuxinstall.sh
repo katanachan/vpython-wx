@@ -16,7 +16,7 @@ cd wxPython-src-3.0.2.0/
 ./configure –prefix=~/.virtualenvs/workspace –with-gtk2 –enable-unicode –with-opengl
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.virtualenvs/workspace/lib
 cd wxPython
-python setup.py build
+CFLAGS=-Wno-error=format-security CPPFLAGS=-Wno-error=format-security python setup.py build
 CFLAGS=-Wno-error=format-security CPPFLAGS=-Wno-error=format-security sudo python setup.py install
 cd ..
 
