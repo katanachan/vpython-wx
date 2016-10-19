@@ -24,7 +24,7 @@ wget https://pypi.python.org/packages/dd/69/a6d5ba016f4e15a83e49471bcf91a7b8fbdf
 tar -xvjf TTFQuery-1.0.5.tar.gz
 cd TTFQuery-1.0.5/
 python setup.py build && sudo python setup.py install
-cd..
+cd ..
 
 sudo pip install fonttools
  
